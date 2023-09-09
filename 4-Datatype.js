@@ -42,3 +42,10 @@ console.log(booleanisLoggerin);
 //0==false
 //
 
+console.log("Number to String Converstion");
+let someNumber=45;
+let stringnumber=String(someNumber);
+console.log(stringnumber);
+console.log(typeof stringnumber);
+
+
