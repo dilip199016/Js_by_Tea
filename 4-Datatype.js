@@ -33,3 +33,12 @@ console.log(valueNumber2);
 let isboolean=1;
 let booleanisLoggerin=Boolean(isboolean);
 console.log(booleanisLoggerin);
+
+
+
+
+
+//1==true;
+//0==false
+//
+
