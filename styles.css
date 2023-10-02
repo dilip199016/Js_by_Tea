@@ -1,0 +1,48 @@
+/* Add your CSS styles here */
+body {
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav .logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+main {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.user-form label,
+.user-form select,
+.user-form input {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.user-form button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.calorie-result {
+    margin-top: 20px;
+}
+.meal-card{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+width: 100px;
+height: 100px;
+}

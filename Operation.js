@@ -24,3 +24,9 @@ console.log("25"-10);
 
 console.log("Line Number 26 Output");
 console.log(1+2+ "5");
+
+
+let gameCounter=100;
+++gameCounter;
+console.log(gameCounter);
+

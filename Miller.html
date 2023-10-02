@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Meal Planner</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Meal Planner</div>
+        </nav>
+    </header>
+    <main>
+        <section class="user-form">
+            <h2>User Information</h2>
+            <form id="userForm">
+                <label for="weight">Weight (kg):</label>
+                <input type="number" id="weight" required>
+                <label for="height">Height (cm):</label>
+                <input type="number" id="height" required>
+                <label for="age">Age:</label>
+                <input type="number" id="age" required>
+                <label for="gender">Gender:</label>
+                <select id="gender" required>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                </select>
+                <label for="activity">Physical Activity:</label>
+                <select id="activity" required>
+                    <option value="light">Lightly Active</option>
+                    <option value="moderate">Moderately Active</option>
+                    <option value="active">Active</option>
+                </select>
+                <button type="submit">Calculate Calories</button>
+            </form>
+        </section>
+        <section class="calorie-result">
+            <h2>Daily Calorie Requirement</h2>
+            <p id="calorieResult">Your daily calorie requirement will be displayed here.</p>
+        </section>
+      <div class="Meal"> <section class="meal-plan">
+            <h2>Meal Plan</h2>
+            <div class="meal-card" id="breakfast">
+                <img src="breakfast.png" alt="Breakfast" id="breakfastImage" style="height: 100px; width: 100px;">
+                <h3>Breakfast</h3>
+                <p>Calories:1100 <span id="breakfastCalories"></span></p>
+            </div>
+            <div class="meal-card" id="lunch" >
+                <img src="Launch.png" alt="Lunch" id="lunchImage" style="height: 100px; width: 100px;">
+                <h3>Lunch</h3>
+                <p>Calories:1800 <span id="lunchCalories"></span></p>
+            </div>
+            <div class="meal-card" id="dinner">
+                <img src="dinner.png" alt="Dinner" id="dinnerImage" style="height: 100px; width: 100px;">
+                <h3>Dinner</h3>
+                <p>Calories:2000 <span id="dinnerCalories"></span></p>
+            </div>
+        </section></div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
