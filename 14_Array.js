@@ -3,10 +3,10 @@ console.log(myArr);
 
 
 
-const arr=document.getElementById("basic");
-arr.innerText+="const myArr=[0,1,5,7,9];  console.log(myArr);"
-arr.innerHTML +=+"<br> <br>console.log(myArr)==>"+(myArr);
-arr.innerText +="In js Array are resizable and can conatin a mix of diffrent type of data"
+// const arr=document.getElementById("basic");
+// arr.innerText+="const myArr=[0,1,5,7,9];  console.log(myArr);"
+// arr.innerHTML +="<br>console.log(myArr)==>"+myArr+"<br>";
+// arr.innerText +="In js Array are resizable and can conatin a mix of diffrent type of data"
 
 
 const myArr2=new Array(1,3,5,7);
@@ -18,6 +18,8 @@ console.log(myArr2);
 console.log(myArr );
 myArr.pop()
 console.log(myArr);
+
+
 
 
 myArr.unshift(25);
@@ -65,16 +67,56 @@ obj1.lastName='Varma'
 console.log(obj1);
 
 
-const nuu=[1,2,3,4,5,6,7,8,9,10];
-
-
-console.log(nuu);
-const update=nuu.slice(2,5);
-console.log("slice==>",update);
-
+const nuu=[25,10,35,55,65,85,95,75,45,];
 
 
 // console.log(nuu);
-const Splic=nuu.splice(2,5);
+// const update=nuu.slice(3,6);
+// console.log("slice==>",update);
 
-// console.log("Splice==>",Splic);
+
+
+console.log(nuu);
+const update2=nuu.splice(0,4);
+
+console.log("Splice==>",update2);
+
+
+
+
+const marvel=["spiderman","ironman","thor"]
+
+const dc=["superman","flash",'batman']
+
+marvel.push(dc)
+// console.log(marvel);
+
+
+// console.log(marvel);
+// console.log(marvel[3][1]);
+console.log("new Change");
+
+
+ const allHero= marvel.concat(dc);
+console.log(allHero);
+
+
+console.log("Spread method");
+const allNewHeros=[...marvel,...dc];
+console.log(allNewHeros);
+
+
+
+const another=[1,5,7,[9,8,4],[10,[15,18]]];
+const realArray=another.flat(Infinity);
+console.log(realArray);
+
+console.log(Array.isArray("dilip"));
+console.log(Array.from("Dilip"));
+console.log(Array.from({name:"Dilip"})); //impoprtant question
+
+
+let scorex=200;
+let scorea=300;
+let scorey=400;
+console.log(Array.of(scorea,scorex,scorey));
